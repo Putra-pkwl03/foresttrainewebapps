@@ -62,17 +62,16 @@ export default function Hero() {
           <div
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              current === i ? "bg-yellow-500" : "bg-white/50"
-            }`}
+            className={`w-3 h-3 rounded-full cursor-pointer ${current === i ? "bg-yellow-500" : "bg-white/50"
+              }`}
           />
         ))}
       </div>
-<div className="absolute -bottom-4 left-0 right-0 h-32 pointer-events-none transform translate-y-22">
-  <div
-    className="w-full h-full"
-    style={{
-      background: `linear-gradient(
+      <div className="absolute -bottom-4 left-0 right-0 h-32 pointer-events-none transform translate-y-22">
+        <div
+          className="w-full h-full"
+          style={{
+            background: `linear-gradient(
         to bottom,
         #425116 0%,
         #5e6c34 10%,
@@ -81,10 +80,9 @@ export default function Hero() {
         #e6ebe6 85%,
         #f9fafb 100%
       )`,
-    }}
-  />
-</div>
-
+          }}
+        />
+      </div>
     </section>
   );
 }
