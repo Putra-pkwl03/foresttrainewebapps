@@ -30,15 +30,21 @@ export default function DestinationSection() {
 
   return (
     <section className="py-24 px-6 md:px-20 bg-gray-50">
-      <h2 className="text-[50px] font-bold text-green-800 text-center mb-4">
-        Temukan Destinasi Edukasi Lingkungan Hidup
-      </h2>
+  <h2 className="text-[50px] font-bold text-green-800 text-center mb-4">
+    Temukan Destinasi Edukasi Lingkungan Hidup
+  </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-        {destinations.map((d, i) => (
-          <DestinationCard key={i} {...d} />
-        ))}
-      </div>
-    </section>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-items-center">
+    {destinations.map((d, i) => (
+      <DestinationCard key={i} {...d} />
+    ))}
+  </div>
+
+  <div className="mt-12 flex justify-center">
+    <button className="bg-[#265031] hover:bg-[#377247] text-white font-bold text-[16px] px-6 py-3 rounded-lg transition duration-300 cursor-pointer">
+      Lihat destinasi lainnya
+    </button>
+  </div>
+</section>
   );
 }
