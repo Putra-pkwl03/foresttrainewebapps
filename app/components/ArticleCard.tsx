@@ -1,9 +1,12 @@
+import Link from 'next/link';
+
 interface Article {
   id: number;
   title: string;
   description?: string;
   date: string;
   image: string;
+  slug: string;
   isLarge?: boolean;
 }
 
@@ -15,9 +18,10 @@ interface ArticleCardProps {
 
 export default function ArticleCard({ article, isLarge, showDescription = false }: ArticleCardProps) {
   return (
-    <article className={`group cursor-pointer ${
-      isLarge ? 'h-full flex flex-col' : 'flex gap-4'
-    }`}>
+    <Link href={`/artikel/${article.slug}`}>
+      <article className={`group cursor-pointer ${
+        isLarge ? 'h-full flex flex-col' : 'flex gap-4'
+      }`}>
       {/* Image Container */}
       <div className={`relative overflow-hidden ${
         isLarge 
@@ -49,6 +53,7 @@ export default function ArticleCard({ article, isLarge, showDescription = false 
           </p>
         )}
       </div>
-    </article>
+      </article>
+    </Link>
   );
 }

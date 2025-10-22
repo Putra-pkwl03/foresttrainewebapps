@@ -6,42 +6,48 @@ const latestArticles = [
     title: "Dampak Nyata Polusi Plastik: Dari Merusak Alam Sampai Masuk Ke Makanan Kita",
     description: "Setiap menit 1 truk sampah plastik dibuang ke laut. Kalau dibiarkan di tahun 2050 jumlah plastik dilaut bisa lebih banyak daripada jumlah ikan.",
     date: "Juli, 29 2025",
-    image: "/img/hero1.jpg"
+    image: "/img/hero1.jpg",
+    slug: "dampak-nyata-polusi-plastik"
   },
   {
     id: 6,
     title: "Disana Panas Ekstrem, Disini Panas Hebat",
     description: "Beberapa minggu terakhir Eropa dihantam gelombang panas yang diperparah dengan perubahan iklim hingga membuat suhu udara meningkat drastis.",
     date: "Juli, 14 2025",
-    image: "/img/hero2.jpg"
+    image: "/img/hero2.jpg",
+    slug: "disana-panas-ekstrem-disini-panas-hebat"
   },
   {
     id: 7,
     title: "Tidak Semua Botol Plastik Bisa Didaur Ulang Lho!",
     description: "Dibalik setiap kemasan plastik ada angka kecil yang menunjukkan jenis plastiknya. Namun cuma sebagian jenis plastik yang bisa didaur ulang.",
     date: "Juli, 10 2025",
-    image: "/img/about.png"
+    image: "/img/about.png",
+    slug: "tidak-semua-botol-plastik-bisa-didaur-ulang"
   },
   {
     id: 8,
     title: "Mengenal Energi Terbarukan",
     description: "Ditengah krisis iklim dan krisis energi, dunia butuh jalan keluar yang berkelanjutan. Dan jawabannya mungkin sudah lama kita kenal.",
     date: "Juni 30 2025",
-    image: "/img/hero3.jpg"
+    image: "/img/hero3.jpg",
+    slug: "mengenal-energi-terbarukan"
   },
   {
     id: 9,
     title: "Menanam Kesadaran, Merawat Masa Depan",
     description: "Pernahkah kamu berpikir kalau ternyata perubahan besar itu nggak selalu harus dimulai dengan gerakan yang besar?",
     date: "Juni, 16 2025",
-    image: "/img/about1.png"
+    image: "/img/about1.png",
+    slug: "menanam-kesadaran-merawat-masa-depan"
   },
   {
     id: 10,
     title: "Raja Ampat, Tambang Nikel, dan Kenapa Kita Harus Peduli?",
     description: "Raja Ampat bukan sekedar destinasi wisata yang indah, ia adalah rumah bagi lebih dari 75% spesies terumbu karang dunia.",
     date: "Juni, 20 2025",
-    image: "/img/hero1.jpg"
+    image: "/img/hero1.jpg",
+    slug: "raja-ampat-tambang-nikel-kenapa-harus-peduli"
   }
 ];
 

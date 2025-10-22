@@ -25,6 +25,16 @@ body {
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif; 
 }
 
+/* Force light theme for article pages */
+.article-page {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.article-page * {
+  color: inherit;
+}
+
 /* Custom styles for article page */
 .article-card {
   transition: transform 0.2s ease-in-out;
