@@ -29,10 +29,26 @@ body {
 .article-page {
   background: #ffffff !important;
   color: #000000 !important;
+  min-height: 100vh;
 }
 
 .article-page * {
   color: inherit;
+}
+
+.article-page body {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Override dark mode for kegiatan page */
+.kegiatan-page {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.kegiatan-page * {
+  color: #000000 !important;
 }
 
 /* Custom styles for article page */

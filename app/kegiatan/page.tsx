@@ -5,7 +5,7 @@ import ActivityGallery from "../components/ActivityGallery";
 
 export default function KegiatanPage() {
   return (
-    <div>
+    <div className="article-page kegiatan-page">
       <Navbar />
       <KegiatanHero />
       <ActivityGallery />
