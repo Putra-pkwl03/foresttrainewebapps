@@ -9,28 +9,32 @@ interface Props {
 
 export default function DestinationCard({ image, title, location, desc }: Props) {
   return (
- <div className="bg-white max-w-[360px] rounded-[23px] border-4 border-[#265031] overflow-hidden flex flex-col shadow-[6px_0_4px_rgba(0,0,0,0.25)] transition-shadow duration-300">
-  <div className="p-6 flex justify-center"> 
-  <div className="w-[100%]"> 
-    <Image
-      src={image}
-      alt={title}
-      width={300}
-      height={250}
-      className="w-full h-40 object-cover rounded-md mx-auto"
-    />
-  </div>
-</div>
-  <div className="p-6 pt-1 flex flex-col flex-1">
-    <h3 className="font-semibold text-[28px] text-black">{title}</h3>
-    <p className="text-sm text-gray-600">{location}</p>
-    <p className="mt-2 text-gray-700 mb-4">{desc}</p>
-    <button className="mt-auto text-[14px] bg-[#265031] hover:bg-[#377247] text-white py-2 px-6 rounded-full self-start cursor-pointer">
-      Lihat Selengkapnya
-    </button>
-  </div>
-</div>
-
-
+    <div className="bg-white rounded-3xl border-4 border-[#265031] flex flex-col h-full overflow-hidden">
+      {/* Image dengan padding dan rounded corners */}
+      <div className="p-4 pb-0">
+        <div className="w-full h-44 overflow-hidden rounded-2xl">
+          <Image
+            src={image}
+            alt={title}
+            width={400}
+            height={300}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      
+      {/* Content */}
+      <div className="px-6 pt-4 pb-6 flex flex-col flex-1">
+        <h3 className="font-bold text-xl text-black mb-1 leading-tight">{title}</h3>
+        <p className="text-sm text-gray-700 mb-3">{location}</p>
+        <p className="text-sm text-gray-800 mb-5 flex-1 leading-relaxed">{desc}</p>
+        <button 
+          className="mt-auto text-sm bg-[#265031] hover:bg-[#1f3f27] font-semibold py-2.5 px-5 rounded-3xl self-start cursor-pointer transition-colors"
+          style={{ color: '#ffffff' }}
+        >
+          Lihat Selengkapnya
+        </button>
+      </div>
+    </div>
   );
 }

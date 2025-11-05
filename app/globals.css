@@ -25,6 +25,47 @@ body {
   font-family: var(--font-poppins), Arial, Helvetica, sans-serif; 
 }
 
+/* Force light theme for article pages */
+.article-page {
+  background: #ffffff !important;
+  color: #000000 !important;
+  min-height: 100vh;
+}
+
+.article-page * {
+  color: inherit;
+}
+
+.article-page body {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* Override dark mode for kegiatan page */
+.kegiatan-page {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+.kegiatan-page * {
+  color: #000000 !important;
+}
+
+/* Exception for hero sections - text must be white */
+.hero-section-white h1,
+.hero-section-white p,
+.hero-section-white h1 *,
+.hero-section-white p *,
+.hero-section-white * {
+  color: #ffffff !important;
+}
+
+/* Exception for katalog hero */
+.katalog-page section h1,
+.katalog-page section h1 * {
+  color: #ffffff !important;
+}
+
 /* Custom styles for article page */
 .article-card {
   transition: transform 0.2s ease-in-out;

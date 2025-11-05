@@ -32,12 +32,12 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-gray-900 transition whitespace-nowrap">
+              <Link href="/katalog" className="hover:text-gray-900 transition whitespace-nowrap">
                 Katalog Destinasi
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-gray-900 transition whitespace-nowrap">
+              <Link href="/kegiatan" className="hover:text-gray-900 transition whitespace-nowrap">
                 Kegiatan Kami
               </Link>
             </li>
@@ -83,7 +83,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/katalog"
                 className="block py-3 px-4 hover:bg-gray-50 rounded transition"
                 onClick={() => setIsOpen(false)}
               >
@@ -92,7 +92,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/kegiatan"
                 className="block py-3 px-4 hover:bg-gray-50 rounded transition"
                 onClick={() => setIsOpen(false)}
               >

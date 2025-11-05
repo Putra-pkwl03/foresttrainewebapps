@@ -7,6 +7,7 @@ const popularArticles = [
     description: "Pulau Halmahera, Maluku Utara, dikenal sebagai rumah bagi kekayaan laut dan hutan yang menakjubkan.",
     date: "Juli, 23 2025",
     image: "/img/hero2.jpg",
+    slug: "ancaman-dari-weda-bay",
     isLarge: true
   },
   {
@@ -14,6 +15,7 @@ const popularArticles = [
     title: "Fast Fashion VS Sustainable Fashion Pilihan style-mu, menentukan masa depan bumi!",
     date: "Agustus, 12 2025",
     image: "/img/hero3.jpg",
+    slug: "fast-fashion-vs-sustainable-fashion",
     isLarge: false
   },
   {
@@ -21,6 +23,7 @@ const popularArticles = [
     title: "\"Save Our World\" Ketika Musik Jadi Seruan untuk Menjaga Bumi",
     date: "Juli, 8 2025",
     image: "/img/about.png",
+    slug: "save-our-world-musik-seruan-menjaga-bumi",
     isLarge: false
   },
   {
@@ -28,6 +31,7 @@ const popularArticles = [
     title: "Gimana Perang Bikin Lingkungan Makin Menderita?",
     date: "Juni, 27 2025",
     image: "/img/about1.png",
+    slug: "perang-bikin-lingkungan-menderita",
     isLarge: false
   }
 ];
