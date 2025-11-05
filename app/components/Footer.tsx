@@ -1,53 +1,46 @@
-import { Linkedin, Instagram, Twitter } from 'lucide-react';
+import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-white via-green-100 to-[#4a7c59] pt-16 pb-12">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          
-          {/* Logo Section */}
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-white rounded-full flex-shrink-0"></div>
-            <span className="text-white font-bold text-2xl">Logo</span>
+    <footer
+      className="text-white py-14"
+      style={{
+        background: "linear-gradient(to bottom, #64A675 0%, #2F5B3E 50%, #1F3B29 100%)",
+      }}
+    >
+      <div className="max-w-screen-xl mx-auto px-8 grid md:grid-cols-3 gap-8 items-center text-center md:text-left">
+        {/* Kiri: Logo */}
+        <div className="flex items-center justify-center md:justify-start h-full -mt-8">
+          <img
+            src="/img/logo.jpg"
+            alt="Logo"
+            className="w-18 h-18 rounded-full"
+          />
+        </div>
+        
+        {/* Tengah: Deskripsi */}
+        <div>
+          <h3 className="text-[30px] font-semibold">Foresttraine</h3>
+          <p className="text-sm mt-2 leading-relaxed text-gray-100">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        
+        {/* Kanan: Hubungi Kami */}
+        <div className="flex flex-col items-center md:items-end space-y-3 mb-6">
+          <h3 className="text-[30px] font-semibold">Hubungi Kami</h3>
+          <div className="flex space-x-8 text-2xl gap-10 mt-6">
+            <a href="#" className="hover:text-gray-200" aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </a>
+            <a href="#" className="hover:text-gray-200" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="#" className="hover:text-gray-200" aria-label="Twitter">
+              <FaTwitter />
+            </a>
           </div>
-
-          {/* Foresttraine Section */}
-          <div>
-            <h3 className="text-white font-bold text-xl mb-3">Foresttraine</h3>
-            <p className="text-white text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-
-          {/* Hubungi Kami Section */}
-          <div>
-            <h3 className="text-white font-bold text-xl mb-4">Hubungi Kami</h3>
-            <div className="flex gap-4">
-              <a 
-                href="#" 
-                className="text-white hover:text-green-200 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin size={24} />
-              </a>
-              <a 
-                href="#" 
-                className="text-white hover:text-green-200 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={24} />
-              </a>
-              <a 
-                href="#" 
-                className="text-white hover:text-green-200 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={24} />
-              </a>
-            </div>
-          </div>
-
         </div>
       </div>
     </footer>
