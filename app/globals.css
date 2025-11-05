@@ -51,6 +51,21 @@ body {
   color: #000000 !important;
 }
 
+/* Exception for hero sections - text must be white */
+.hero-section-white h1,
+.hero-section-white p,
+.hero-section-white h1 *,
+.hero-section-white p *,
+.hero-section-white * {
+  color: #ffffff !important;
+}
+
+/* Exception for katalog hero */
+.katalog-page section h1,
+.katalog-page section h1 * {
+  color: #ffffff !important;
+}
+
 /* Custom styles for article page */
 .article-card {
   transition: transform 0.2s ease-in-out;

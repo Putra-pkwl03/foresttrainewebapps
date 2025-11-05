@@ -1,6 +1,6 @@
 export default function KegiatanHero() {
   return (
-    <section className="relative h-[500px] md:h-[600px] flex items-center justify-center">
+    <section className="relative h-[500px] md:h-[600px] flex items-center justify-center hero-section-white">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -14,11 +14,17 @@ export default function KegiatanHero() {
       
       {/* Content */}
       <div className="relative z-10 px-4 md:px-8 lg:px-16 max-w-4xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 leading-tight">
+        <h1 
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 leading-tight"
+          style={{ color: '#ffffff' }}
+        >
           Kegiatan Kami
         </h1>
         
-        <p className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto">
+        <p 
+          className="text-lg md:text-xl text-white leading-relaxed max-w-3xl mx-auto"
+          style={{ color: '#ffffff' }}
+        >
           Setiap kegiatan yang kami lakukan adalah bagian dari perjalanan kami bersama Anda. 
           Melalui galeri ini, kami ingin berbagi momen penting yang mencerminkan dedikasi, 
           semangat, dan nilai yang dipegang Foresttraine.
